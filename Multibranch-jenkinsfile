@@ -1,8 +1,6 @@
 pipeline {
 
     agent any
- 
-    }
 
     options {
         buildDiscarder logRotator( 
@@ -54,11 +52,11 @@ pipeline {
             }
             steps {
                 sh """
-                echo "Building Artifact"
+                echo "Building"
                 """
 
                 sh """
-                echo "Deploying Code"
+                echo "Deploying"
                 """
             }
         }
